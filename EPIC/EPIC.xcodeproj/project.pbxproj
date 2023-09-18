@@ -16,6 +16,15 @@
 		81AC39AA2AB8F0AD008D77C1 /* EPICTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39A92AB8F0AD008D77C1 /* EPICTests.swift */; };
 		81AC39B42AB8F0AD008D77C1 /* EPICUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39B32AB8F0AD008D77C1 /* EPICUITests.swift */; };
 		81AC39B62AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39B52AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift */; };
+		81AC39C42AB8F440008D77C1 /* Base.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39C32AB8F440008D77C1 /* Base.swift */; };
+		81AC39CA2AB90B23008D77C1 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39C92AB90B23008D77C1 /* HomeView.swift */; };
+		81AC39D12AB90B68008D77C1 /* HomeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39D02AB90B68008D77C1 /* HomeRepository.swift */; };
+		81AC39D42AB90B7A008D77C1 /* HomeServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39D32AB90B7A008D77C1 /* HomeServiceProvider.swift */; };
+		81AC39D72AB90B8E008D77C1 /* HomeFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39D62AB90B8E008D77C1 /* HomeFactory.swift */; };
+		81AC39D92AB91304008D77C1 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39D82AB91304008D77C1 /* HomeViewModel.swift */; };
+		81AC39DB2AB9184B008D77C1 /* HomeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39DA2AB9184B008D77C1 /* HomeDataProvider.swift */; };
+		81AC39DD2AB91894008D77C1 /* HomeDBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39DC2AB91894008D77C1 /* HomeDBProvider.swift */; };
+		81AC39E02AB91926008D77C1 /* ImageDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39DF2AB91926008D77C1 /* ImageDate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +57,15 @@
 		81AC39AF2AB8F0AD008D77C1 /* EPICUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AC39B32AB8F0AD008D77C1 /* EPICUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITests.swift; sourceTree = "<group>"; };
 		81AC39B52AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		81AC39C32AB8F440008D77C1 /* Base.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base.swift; sourceTree = "<group>"; };
+		81AC39C92AB90B23008D77C1 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		81AC39D02AB90B68008D77C1 /* HomeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRepository.swift; sourceTree = "<group>"; };
+		81AC39D32AB90B7A008D77C1 /* HomeServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceProvider.swift; sourceTree = "<group>"; };
+		81AC39D62AB90B8E008D77C1 /* HomeFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFactory.swift; sourceTree = "<group>"; };
+		81AC39D82AB91304008D77C1 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		81AC39DA2AB9184B008D77C1 /* HomeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProvider.swift; sourceTree = "<group>"; };
+		81AC39DC2AB91894008D77C1 /* HomeDBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDBProvider.swift; sourceTree = "<group>"; };
+		81AC39DF2AB91926008D77C1 /* ImageDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +98,7 @@
 			children = (
 				81AC39922AB8F0AC008D77C1 /* EPIC */,
 				81AC39A82AB8F0AD008D77C1 /* EPICTests */,
+				81AC39C22AB8F40E008D77C1 /* EPICSanpshotTests */,
 				81AC39B22AB8F0AD008D77C1 /* EPICUITests */,
 				81AC39912AB8F0AC008D77C1 /* Products */,
 			);
@@ -98,11 +117,10 @@
 		81AC39922AB8F0AC008D77C1 /* EPIC */ = {
 			isa = PBXGroup;
 			children = (
-				81AC39932AB8F0AC008D77C1 /* EPICApp.swift */,
-				81AC39952AB8F0AC008D77C1 /* ContentView.swift */,
-				81AC39972AB8F0AD008D77C1 /* Assets.xcassets */,
-				81AC399C2AB8F0AD008D77C1 /* Persistence.swift */,
-				81AC399E2AB8F0AD008D77C1 /* EPIC.xcdatamodeld */,
+				81AC39C82AB8F4A1008D77C1 /* Home */,
+				81AC39C72AB8F491008D77C1 /* Persistence */,
+				81AC39C52AB8F467008D77C1 /* App */,
+				81AC39C62AB8F486008D77C1 /* Assets */,
 				81AC39992AB8F0AD008D77C1 /* Preview Content */,
 			);
 			path = EPIC;
@@ -131,6 +149,103 @@
 				81AC39B52AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift */,
 			);
 			path = EPICUITests;
+			sourceTree = "<group>";
+		};
+		81AC39C22AB8F40E008D77C1 /* EPICSanpshotTests */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39C32AB8F440008D77C1 /* Base.swift */,
+			);
+			path = EPICSanpshotTests;
+			sourceTree = "<group>";
+		};
+		81AC39C52AB8F467008D77C1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39932AB8F0AC008D77C1 /* EPICApp.swift */,
+				81AC39952AB8F0AC008D77C1 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		81AC39C62AB8F486008D77C1 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39972AB8F0AD008D77C1 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		81AC39C72AB8F491008D77C1 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				81AC399C2AB8F0AD008D77C1 /* Persistence.swift */,
+				81AC399E2AB8F0AD008D77C1 /* EPIC.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		81AC39C82AB8F4A1008D77C1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39D52AB90B7F008D77C1 /* HomeFactory */,
+				81AC39CB2AB90B2B008D77C1 /* HomeViews */,
+				81AC39CC2AB90B37008D77C1 /* HomeViewModel */,
+				81AC39CF2AB90B54008D77C1 /* HomeRepository */,
+				81AC39D22AB90B6D008D77C1 /* HomeService */,
+				81AC39DE2AB91901008D77C1 /* HomeModels */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		81AC39CB2AB90B2B008D77C1 /* HomeViews */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39C92AB90B23008D77C1 /* HomeView.swift */,
+			);
+			path = HomeViews;
+			sourceTree = "<group>";
+		};
+		81AC39CC2AB90B37008D77C1 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39D82AB91304008D77C1 /* HomeViewModel.swift */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
+		81AC39CF2AB90B54008D77C1 /* HomeRepository */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39D02AB90B68008D77C1 /* HomeRepository.swift */,
+			);
+			path = HomeRepository;
+			sourceTree = "<group>";
+		};
+		81AC39D22AB90B6D008D77C1 /* HomeService */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39D32AB90B7A008D77C1 /* HomeServiceProvider.swift */,
+				81AC39DA2AB9184B008D77C1 /* HomeDataProvider.swift */,
+				81AC39DC2AB91894008D77C1 /* HomeDBProvider.swift */,
+			);
+			path = HomeService;
+			sourceTree = "<group>";
+		};
+		81AC39D52AB90B7F008D77C1 /* HomeFactory */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39D62AB90B8E008D77C1 /* HomeFactory.swift */,
+			);
+			path = HomeFactory;
+			sourceTree = "<group>";
+		};
+		81AC39DE2AB91901008D77C1 /* HomeModels */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39DF2AB91926008D77C1 /* ImageDate.swift */,
+			);
+			path = HomeModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,8 +379,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AC399D2AB8F0AD008D77C1 /* Persistence.swift in Sources */,
+				81AC39DB2AB9184B008D77C1 /* HomeDataProvider.swift in Sources */,
+				81AC39D92AB91304008D77C1 /* HomeViewModel.swift in Sources */,
+				81AC39E02AB91926008D77C1 /* ImageDate.swift in Sources */,
+				81AC39D12AB90B68008D77C1 /* HomeRepository.swift in Sources */,
+				81AC39D72AB90B8E008D77C1 /* HomeFactory.swift in Sources */,
 				81AC39962AB8F0AC008D77C1 /* ContentView.swift in Sources */,
 				81AC39A02AB8F0AD008D77C1 /* EPIC.xcdatamodeld in Sources */,
+				81AC39DD2AB91894008D77C1 /* HomeDBProvider.swift in Sources */,
+				81AC39CA2AB90B23008D77C1 /* HomeView.swift in Sources */,
+				81AC39D42AB90B7A008D77C1 /* HomeServiceProvider.swift in Sources */,
 				81AC39942AB8F0AC008D77C1 /* EPICApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81AC39C42AB8F440008D77C1 /* Base.swift in Sources */,
 				81AC39AA2AB8F0AD008D77C1 /* EPICTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

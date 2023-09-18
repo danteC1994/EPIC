@@ -10,10 +10,10 @@ import SwiftUI
 @main
 struct EPICApp: App {
     let persistenceController = PersistenceController.shared
-
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeFactory.createHome()
+                .environment(\.colorScheme, .dark)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
