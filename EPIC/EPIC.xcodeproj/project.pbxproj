@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81AC39942AB8F0AC008D77C1 /* EPICApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39932AB8F0AC008D77C1 /* EPICApp.swift */; };
+		81AC39962AB8F0AC008D77C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39952AB8F0AC008D77C1 /* ContentView.swift */; };
+		81AC39982AB8F0AD008D77C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AC39972AB8F0AD008D77C1 /* Assets.xcassets */; };
+		81AC399B2AB8F0AD008D77C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81AC399A2AB8F0AD008D77C1 /* Preview Assets.xcassets */; };
+		81AC399D2AB8F0AD008D77C1 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC399C2AB8F0AD008D77C1 /* Persistence.swift */; };
+		81AC39A02AB8F0AD008D77C1 /* EPIC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81AC399E2AB8F0AD008D77C1 /* EPIC.xcdatamodeld */; };
+		81AC39AA2AB8F0AD008D77C1 /* EPICTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39A92AB8F0AD008D77C1 /* EPICTests.swift */; };
+		81AC39B42AB8F0AD008D77C1 /* EPICUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39B32AB8F0AD008D77C1 /* EPICUITests.swift */; };
+		81AC39B62AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39B52AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		81AC39A62AB8F0AD008D77C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AC39882AB8F0AC008D77C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81AC398F2AB8F0AC008D77C1;
+			remoteInfo = EPIC;
+		};
+		81AC39B02AB8F0AD008D77C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 81AC39882AB8F0AC008D77C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 81AC398F2AB8F0AC008D77C1;
+			remoteInfo = EPIC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		81AC39902AB8F0AC008D77C1 /* EPIC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EPIC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AC39932AB8F0AC008D77C1 /* EPICApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICApp.swift; sourceTree = "<group>"; };
+		81AC39952AB8F0AC008D77C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		81AC39972AB8F0AD008D77C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		81AC399A2AB8F0AD008D77C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		81AC399C2AB8F0AD008D77C1 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		81AC399F2AB8F0AD008D77C1 /* EPIC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EPIC.xcdatamodel; sourceTree = "<group>"; };
+		81AC39A52AB8F0AD008D77C1 /* EPICTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AC39A92AB8F0AD008D77C1 /* EPICTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICTests.swift; sourceTree = "<group>"; };
+		81AC39AF2AB8F0AD008D77C1 /* EPICUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EPICUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		81AC39B32AB8F0AD008D77C1 /* EPICUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITests.swift; sourceTree = "<group>"; };
+		81AC39B52AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		81AC398D2AB8F0AC008D77C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AC39A22AB8F0AD008D77C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AC39AC2AB8F0AD008D77C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81AC39872AB8F0AC008D77C1 = {
+			isa = PBXGroup;
+			children = (
+				81AC39922AB8F0AC008D77C1 /* EPIC */,
+				81AC39A82AB8F0AD008D77C1 /* EPICTests */,
+				81AC39B22AB8F0AD008D77C1 /* EPICUITests */,
+				81AC39912AB8F0AC008D77C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		81AC39912AB8F0AC008D77C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39902AB8F0AC008D77C1 /* EPIC.app */,
+				81AC39A52AB8F0AD008D77C1 /* EPICTests.xctest */,
+				81AC39AF2AB8F0AD008D77C1 /* EPICUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		81AC39922AB8F0AC008D77C1 /* EPIC */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39932AB8F0AC008D77C1 /* EPICApp.swift */,
+				81AC39952AB8F0AC008D77C1 /* ContentView.swift */,
+				81AC39972AB8F0AD008D77C1 /* Assets.xcassets */,
+				81AC399C2AB8F0AD008D77C1 /* Persistence.swift */,
+				81AC399E2AB8F0AD008D77C1 /* EPIC.xcdatamodeld */,
+				81AC39992AB8F0AD008D77C1 /* Preview Content */,
+			);
+			path = EPIC;
+			sourceTree = "<group>";
+		};
+		81AC39992AB8F0AD008D77C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				81AC399A2AB8F0AD008D77C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		81AC39A82AB8F0AD008D77C1 /* EPICTests */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39A92AB8F0AD008D77C1 /* EPICTests.swift */,
+			);
+			path = EPICTests;
+			sourceTree = "<group>";
+		};
+		81AC39B22AB8F0AD008D77C1 /* EPICUITests */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39B32AB8F0AD008D77C1 /* EPICUITests.swift */,
+				81AC39B52AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift */,
+			);
+			path = EPICUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		81AC398F2AB8F0AC008D77C1 /* EPIC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AC39B92AB8F0AD008D77C1 /* Build configuration list for PBXNativeTarget "EPIC" */;
+			buildPhases = (
+				81AC398C2AB8F0AC008D77C1 /* Sources */,
+				81AC398D2AB8F0AC008D77C1 /* Frameworks */,
+				81AC398E2AB8F0AC008D77C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EPIC;
+			productName = EPIC;
+			productReference = 81AC39902AB8F0AC008D77C1 /* EPIC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		81AC39A42AB8F0AD008D77C1 /* EPICTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AC39BC2AB8F0AD008D77C1 /* Build configuration list for PBXNativeTarget "EPICTests" */;
+			buildPhases = (
+				81AC39A12AB8F0AD008D77C1 /* Sources */,
+				81AC39A22AB8F0AD008D77C1 /* Frameworks */,
+				81AC39A32AB8F0AD008D77C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81AC39A72AB8F0AD008D77C1 /* PBXTargetDependency */,
+			);
+			name = EPICTests;
+			productName = EPICTests;
+			productReference = 81AC39A52AB8F0AD008D77C1 /* EPICTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		81AC39AE2AB8F0AD008D77C1 /* EPICUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81AC39BF2AB8F0AD008D77C1 /* Build configuration list for PBXNativeTarget "EPICUITests" */;
+			buildPhases = (
+				81AC39AB2AB8F0AD008D77C1 /* Sources */,
+				81AC39AC2AB8F0AD008D77C1 /* Frameworks */,
+				81AC39AD2AB8F0AD008D77C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				81AC39B12AB8F0AD008D77C1 /* PBXTargetDependency */,
+			);
+			name = EPICUITests;
+			productName = EPICUITests;
+			productReference = 81AC39AF2AB8F0AD008D77C1 /* EPICUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		81AC39882AB8F0AC008D77C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					81AC398F2AB8F0AC008D77C1 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+					81AC39A42AB8F0AD008D77C1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 81AC398F2AB8F0AC008D77C1;
+					};
+					81AC39AE2AB8F0AD008D77C1 = {
+						CreatedOnToolsVersion = 14.1;
+						TestTargetID = 81AC398F2AB8F0AC008D77C1;
+					};
+				};
+			};
+			buildConfigurationList = 81AC398B2AB8F0AC008D77C1 /* Build configuration list for PBXProject "EPIC" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 81AC39872AB8F0AC008D77C1;
+			productRefGroup = 81AC39912AB8F0AC008D77C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				81AC398F2AB8F0AC008D77C1 /* EPIC */,
+				81AC39A42AB8F0AD008D77C1 /* EPICTests */,
+				81AC39AE2AB8F0AD008D77C1 /* EPICUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		81AC398E2AB8F0AC008D77C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AC399B2AB8F0AD008D77C1 /* Preview Assets.xcassets in Resources */,
+				81AC39982AB8F0AD008D77C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AC39A32AB8F0AD008D77C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AC39AD2AB8F0AD008D77C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		81AC398C2AB8F0AC008D77C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AC399D2AB8F0AD008D77C1 /* Persistence.swift in Sources */,
+				81AC39962AB8F0AC008D77C1 /* ContentView.swift in Sources */,
+				81AC39A02AB8F0AD008D77C1 /* EPIC.xcdatamodeld in Sources */,
+				81AC39942AB8F0AC008D77C1 /* EPICApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AC39A12AB8F0AD008D77C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AC39AA2AB8F0AD008D77C1 /* EPICTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		81AC39AB2AB8F0AD008D77C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81AC39B42AB8F0AD008D77C1 /* EPICUITests.swift in Sources */,
+				81AC39B62AB8F0AD008D77C1 /* EPICUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		81AC39A72AB8F0AD008D77C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81AC398F2AB8F0AC008D77C1 /* EPIC */;
+			targetProxy = 81AC39A62AB8F0AD008D77C1 /* PBXContainerItemProxy */;
+		};
+		81AC39B12AB8F0AD008D77C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 81AC398F2AB8F0AC008D77C1 /* EPIC */;
+			targetProxy = 81AC39B02AB8F0AD008D77C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		81AC39B72AB8F0AD008D77C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		81AC39B82AB8F0AD008D77C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		81AC39BA2AB8F0AD008D77C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EPIC/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanteCanizo.EPIC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		81AC39BB2AB8F0AD008D77C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EPIC/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanteCanizo.EPIC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		81AC39BD2AB8F0AD008D77C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanteCanizo.EPICTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPIC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EPIC";
+			};
+			name = Debug;
+		};
+		81AC39BE2AB8F0AD008D77C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanteCanizo.EPICTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EPIC.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/EPIC";
+			};
+			name = Release;
+		};
+		81AC39C02AB8F0AD008D77C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanteCanizo.EPICUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EPIC;
+			};
+			name = Debug;
+		};
+		81AC39C12AB8F0AD008D77C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.DanteCanizo.EPICUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EPIC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		81AC398B2AB8F0AC008D77C1 /* Build configuration list for PBXProject "EPIC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AC39B72AB8F0AD008D77C1 /* Debug */,
+				81AC39B82AB8F0AD008D77C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81AC39B92AB8F0AD008D77C1 /* Build configuration list for PBXNativeTarget "EPIC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AC39BA2AB8F0AD008D77C1 /* Debug */,
+				81AC39BB2AB8F0AD008D77C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81AC39BC2AB8F0AD008D77C1 /* Build configuration list for PBXNativeTarget "EPICTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AC39BD2AB8F0AD008D77C1 /* Debug */,
+				81AC39BE2AB8F0AD008D77C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81AC39BF2AB8F0AD008D77C1 /* Build configuration list for PBXNativeTarget "EPICUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				81AC39C02AB8F0AD008D77C1 /* Debug */,
+				81AC39C12AB8F0AD008D77C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		81AC399E2AB8F0AD008D77C1 /* EPIC.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				81AC399F2AB8F0AD008D77C1 /* EPIC.xcdatamodel */,
+			);
+			currentVersion = 81AC399F2AB8F0AD008D77C1 /* EPIC.xcdatamodel */;
+			path = EPIC.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 81AC39882AB8F0AC008D77C1 /* Project object */;
+}
