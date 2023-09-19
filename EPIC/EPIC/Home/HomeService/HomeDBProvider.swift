@@ -8,7 +8,7 @@
 import Foundation
 
 class HomeDBProvider: DBProvider {
-    func requestDates() -> ImageDates {
+    func requestDates() -> [ImageDate] {
         fatalError("Not implemented")
     }
     

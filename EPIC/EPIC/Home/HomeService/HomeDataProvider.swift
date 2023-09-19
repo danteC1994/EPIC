@@ -8,10 +8,10 @@
 import Combine
 
 protocol DBProvider {
-    func requestDates() -> ImageDates
+    func requestDates() -> [ImageDate]
     func storeDates()
 }
 
 protocol ServiceProvider {
-    func requestDates(imageType: String) -> AnyPublisher<ImageDates, Error>
+    func requestDates(imageType: String) -> AnyPublisher<[ImageDate], Error>
 }

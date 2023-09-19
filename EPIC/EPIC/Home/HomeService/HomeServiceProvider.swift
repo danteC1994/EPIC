@@ -9,20 +9,20 @@ import Foundation
 import Combine
 
 class HomeServiceProvider: ServiceProvider {
-    func requestDates(imageType: String) -> AnyPublisher<ImageDates, Error> {
+    func requestDates(imageType: String) -> AnyPublisher<[ImageDate], Error> {
         let url = URL(string: "https://epic.gsfc.nasa.gov/api/enhanced/all")
 
         return URLSession.shared.dataTaskPublisher(for: url!)
             .map(\.data)
-            .decode(type: ImageDates.self, decoder: JSONDecoder())
+            .decode(type: [ImageDate].self, decoder: JSONDecoder())
             .eraseToAnyPublisher()
     }
 }
 
 class HomeServiceProviderMock: ServiceProvider {
-    func requestDates(imageType: String) -> AnyPublisher<ImageDates, Error> {
-        return Just(ImageDates(dates: []))
-            .replaceError(with: ImageDates(dates: []))
+    func requestDates(imageType: String) -> AnyPublisher<[ImageDate], Error> {
+        return Just([ImageDate]())
+            .replaceError(with: [ImageDate]())
             .mapError({_ in EPICAPIError.notFound})
             .eraseToAnyPublisher()
     }

@@ -8,13 +8,22 @@
 import SwiftUI
 
 struct HomeView: View {
-    let viewModel: HomeViewModel
+    @ObservedObject var viewModel: HomeViewModel
     var body: some View {
         NavigationView {
             VStack {
                 ProgressView()
-                   .progressViewStyle(CircularProgressViewStyle())
+                    .progressViewStyle(CircularProgressViewStyle())
             }
+            .isHidden(viewModel.imageDates.isEmpty)
+            List {
+                ForEach(viewModel.imageDates) { imageDate in
+                    Text(imageDate.date)
+                }
+            }
+        }
+        .onAppear{
+            viewModel.fetchImages()
         }
     }
 }
@@ -22,5 +31,15 @@ struct HomeView: View {
 struct HomeView_Previews: PreviewProvider {
     static var previews: some View {
         HomeFactory.createHomeMocked()
+    }
+}
+
+extension View {
+    @ViewBuilder func isHidden(_ isHidden: Bool) -> some View {
+        if isHidden {
+            self.hidden()
+        } else {
+            self
+        }
     }
 }

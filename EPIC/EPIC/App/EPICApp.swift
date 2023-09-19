@@ -13,7 +13,7 @@ struct EPICApp: App {
     var body: some Scene {
         WindowGroup {
             HomeFactory.createHome()
-                .environment(\.colorScheme, .dark)
+//                .environment(\.colorScheme, .dark)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

@@ -9,17 +9,16 @@ import SwiftUI
 
 class HomeFactory {
     static func createHome() -> some View {
-        
-
         let homeRepository = HomeRepository(
             serviceProvider: HomeServiceProvider(),
             dbProvider: HomeDBProvider(),
             monitor: NetworkMonitor()
         )
-        let viewModel = HomeViewModel(homeRepository: homeRepository)
+        let viewModel = HomeViewModel(
+            homeRepository: homeRepository
+        )
 
         return HomeView(viewModel: viewModel)
-            .environmentObject(networkMonitor)
     }
 }
 

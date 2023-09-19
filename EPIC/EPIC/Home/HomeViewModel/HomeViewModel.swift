@@ -6,28 +6,36 @@
 //
 
 import Combine
+import Foundation
 
-class HomeViewModel {
-    let monitor: Monitor
-    let HomeRepository: HomeRepository
+class HomeViewModel: ObservableObject {
+    private let homeRepository: HomeRepository
+    @Published var imageDates = [ImageDate]()
 
-    var anyCancellables = Set<AnyCancellable>()
+    private var anyCancellables = Set<AnyCancellable>()
     
-    init(homeRepository: HomeRepository, monitor: Monitor) {
-        self.HomeRepository = homeRepository
-        self.monitor = monitor
-
-        monitor.isConnected.sink { [weak self] isConnected in
-            if isConnected {
-                self?.HomeRepository.fetchDates(imageType: "enhanced")
-            } else {
-                self?.HomeRepository.fetchStoredDates()
-            }
-        }
-        .store(in: &anyCancellables)
+    init(homeRepository: HomeRepository) {
+        self.homeRepository = homeRepository
+        setSubscribers()
     }
 
     func fetchImages() {
-        
+        homeRepository.fetchDates(imageType: "enhanced")
+    }
+
+    func setSubscribers() {
+        homeRepository.dateImagesServicePublisher
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { completion in
+                switch completion {
+                case let .failure(error):
+                    break
+                case .finished:
+                    break
+                }
+            }, receiveValue: { imageDates in
+                self.imageDates = imageDates
+            })
+            .store(in: &anyCancellables)
     }
 }

@@ -7,10 +7,14 @@
 
 import Foundation
 
-struct ImageDates: Decodable {
-    let dates: [ImageDate]
-}
+//struct ImageDates: Decodable {
+//    let dates: [ImageDate]
+//}
 
-struct ImageDate: Decodable {
+struct ImageDate: Decodable, Identifiable, Hashable {
+    var id: UUID {
+        return UUID()
+    }
+    
     let date: String
 }
