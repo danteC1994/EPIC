@@ -25,6 +25,9 @@
 		81AC39DB2AB9184B008D77C1 /* HomeDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39DA2AB9184B008D77C1 /* HomeDataProvider.swift */; };
 		81AC39DD2AB91894008D77C1 /* HomeDBProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39DC2AB91894008D77C1 /* HomeDBProvider.swift */; };
 		81AC39E02AB91926008D77C1 /* ImageDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39DF2AB91926008D77C1 /* ImageDate.swift */; };
+		81AC39E42AB9257B008D77C1 /* EPICAPIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39E32AB9257B008D77C1 /* EPICAPIErrors.swift */; };
+		81AC39E72AB92941008D77C1 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39E62AB92941008D77C1 /* NetworkMonitor.swift */; };
+		81AC39E92AB93462008D77C1 /* Monitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81AC39E82AB93462008D77C1 /* Monitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +69,9 @@
 		81AC39DA2AB9184B008D77C1 /* HomeDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDataProvider.swift; sourceTree = "<group>"; };
 		81AC39DC2AB91894008D77C1 /* HomeDBProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDBProvider.swift; sourceTree = "<group>"; };
 		81AC39DF2AB91926008D77C1 /* ImageDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDate.swift; sourceTree = "<group>"; };
+		81AC39E32AB9257B008D77C1 /* EPICAPIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPICAPIErrors.swift; sourceTree = "<group>"; };
+		81AC39E62AB92941008D77C1 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		81AC39E82AB93462008D77C1 /* Monitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,7 @@
 		81AC39922AB8F0AC008D77C1 /* EPIC */ = {
 			isa = PBXGroup;
 			children = (
+				81AC39E12AB9255C008D77C1 /* Shared */,
 				81AC39C82AB8F4A1008D77C1 /* Home */,
 				81AC39C72AB8F491008D77C1 /* Persistence */,
 				81AC39C52AB8F467008D77C1 /* App */,
@@ -246,6 +253,32 @@
 				81AC39DF2AB91926008D77C1 /* ImageDate.swift */,
 			);
 			path = HomeModels;
+			sourceTree = "<group>";
+		};
+		81AC39E12AB9255C008D77C1 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39E52AB92925008D77C1 /* NetworkMonitor */,
+				81AC39E22AB92563008D77C1 /* Service */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		81AC39E22AB92563008D77C1 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39E32AB9257B008D77C1 /* EPICAPIErrors.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		81AC39E52AB92925008D77C1 /* NetworkMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				81AC39E62AB92941008D77C1 /* NetworkMonitor.swift */,
+				81AC39E82AB93462008D77C1 /* Monitor.swift */,
+			);
+			path = NetworkMonitor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,17 +412,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AC399D2AB8F0AD008D77C1 /* Persistence.swift in Sources */,
+				81AC39E92AB93462008D77C1 /* Monitor.swift in Sources */,
 				81AC39DB2AB9184B008D77C1 /* HomeDataProvider.swift in Sources */,
 				81AC39D92AB91304008D77C1 /* HomeViewModel.swift in Sources */,
 				81AC39E02AB91926008D77C1 /* ImageDate.swift in Sources */,
 				81AC39D12AB90B68008D77C1 /* HomeRepository.swift in Sources */,
 				81AC39D72AB90B8E008D77C1 /* HomeFactory.swift in Sources */,
 				81AC39962AB8F0AC008D77C1 /* ContentView.swift in Sources */,
+				81AC39E42AB9257B008D77C1 /* EPICAPIErrors.swift in Sources */,
 				81AC39A02AB8F0AD008D77C1 /* EPIC.xcdatamodeld in Sources */,
 				81AC39DD2AB91894008D77C1 /* HomeDBProvider.swift in Sources */,
 				81AC39CA2AB90B23008D77C1 /* HomeView.swift in Sources */,
 				81AC39D42AB90B7A008D77C1 /* HomeServiceProvider.swift in Sources */,
 				81AC39942AB8F0AC008D77C1 /* EPICApp.swift in Sources */,
+				81AC39E72AB92941008D77C1 /* NetworkMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,8 +5,13 @@
 //  Created by dante canizo on 18/09/2023.
 //
 
-import Foundation
+import Combine
 
-protocol HomeProvider {
+protocol DBProvider {
     func requestDates() -> ImageDates
+    func storeDates()
+}
+
+protocol ServiceProvider {
+    func requestDates(imageType: String) -> AnyPublisher<ImageDates, Error>
 }

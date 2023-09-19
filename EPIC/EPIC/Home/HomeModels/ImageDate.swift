@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct ImageDates {
+struct ImageDates: Decodable {
     let dates: [ImageDate]
 }
 
